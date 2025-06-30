@@ -1,5 +1,5 @@
 <?php
-echo 'Hello word! (from PHP file engine)<br/>';
+echo 'Hello word! (from PHP SQL engine)<br/>';
 $url = $_SERVER['REQUEST_URI']; // поучаем адрес запроса
 echo '$_SERVER["REQUEST_URI"] =' . $url;
 include('../db/connect.php');
