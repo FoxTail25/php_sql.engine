@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.127.126.26
--- Время создания: Июн 30 2025 г., 09:36
+-- Время создания: Июл 01 2025 г., 09:27
 -- Версия сервера: 8.0.35
 -- Версия PHP: 8.1.28
 
@@ -39,9 +39,9 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`id`, `slug`, `title`, `content`) VALUES
-(1, '', 'page 1', '<div>page_1</div>'),
-(2, '', 'page 2', '<div>page_2</div>'),
-(3, '', 'page 3', '<div>page_3</div>');
+(1, 'my-first-page', 'page 1', '<div>page_1</div>'),
+(2, 'my-second-page', 'page 2', '<div>page_2</div>'),
+(3, 'my-third-page', 'page 3', '<div>page_3</div>');
 
 --
 -- Индексы сохранённых таблиц

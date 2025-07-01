@@ -9,13 +9,13 @@
 </head>
 <body>
 	<header>
-		{{ header in layout }}
+		header
 	</header>
 	<main>
 		{{ content in layout }}
 	</main>
 	<footer>
-		{{ footer in layout }}
+		footer in layout
 	</footer>
 </body>
 </html>
