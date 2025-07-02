@@ -1,1 +1,1 @@
-PHP движок сайта (на SQL). Содержимое каталога OpenServerPanel
+PHP движок сайта (на SQL). Содержимое каталога OpenServerPanel 6.*
