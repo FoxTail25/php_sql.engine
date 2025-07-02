@@ -1,24 +1,9 @@
 <?php
-	$query = "SELECT slug, title FROM pages";
-	$res = mysqli_query($site_base_link, $query) or die(mysqli_error($link));
+	$slug   = $params[1];
+	$query  = "SELECT * FROM pages WHERE slug='$slug'";
 	
-	for ($data = []; $row = mysqli_fetch_assoc($res); $data[] = 
-		$row); 
-	
-	$content = '';
-	foreach ($data as $page) {
-		$content .= '
-			<div>
-				<a href="/page/'  . $page['slug'] . '">' . 
-					$page['title'] . '</a> 
-			</div>
-		';
-	}
-	
-	$page = [
-		'title' => 'список всех страниц',
-		'content' => $content
-	];
+	$res = mysqli_query($site_base_link, $query) or die(mysqli_error($site_base_link));
+	$page   = mysqli_fetch_assoc($res);
 	
 	return $page;
 ?>

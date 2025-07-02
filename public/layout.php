@@ -10,6 +10,7 @@
 <body>
 	<header>
 		<nav>
+			<a href="https://phpsql.engine/page/all">all</a>
 			<a href="https://phpsql.engine/page/my-first-page">first-page</a>
 			<a href="https://phpsql.engine/page/my-second-page">second-page</a>
 			<a href="https://phpsql.engine/page/my-third-page">third-page</a>
