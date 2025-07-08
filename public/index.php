@@ -2,15 +2,11 @@
 include('../db/connect.php');
 $url = $_SERVER['REQUEST_URI']; // поучаем адрес запроса
 
-	if($url == '/') {
 
-		$page = include 'view/page/home.php';
-	}
-
-    if (preg_match('#^/page/([a-z0-9_-]+)$#', $url, $params)) {
+    if (preg_match('#^/page/(?<slug>[a-z0-9_-]+)$#', $url, $params)) {
 		$page = include 'view/page/show.php';
 	}
-	if (preg_match('#^/page/all$#', $url, $params)) {
+	if (preg_match('#^/page/all$#', $url, $params) or $url == '/') {
 		$page = include 'view/page/all.php';
 	}
 
